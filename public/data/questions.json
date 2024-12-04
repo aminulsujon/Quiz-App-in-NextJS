@@ -961,7 +961,9 @@
                 {
                     "question": "Which approach consumes less memory when processing 100,000 records in Laravel?",
                     "options": [
+                        "Using with for related data",
                         "Using chunk() to process records in batches",
+                        "Using pagination",
                         "Using get() to process all records"
                     ],
                     "answer": "Using chunk() to process records in batches"
@@ -994,6 +996,42 @@
                         "Just using an IDE's formatter"
                     ],
                     "answer": "Laravel Pint and PHP_CodeSniffer with pre-commit hooks"
+                },
+                {
+                    "question": "Which is not an aggregate function in laravel?",
+                    "options": [
+                        "count()",
+                        "max()",
+                        "min()",
+                        "avg()",
+                        "sum()",
+                        "round()"
+                    ],
+                    "answer": "round()"
+                },
+                {
+                    "question": "Which Cache Drivers is not supported by Laravel?",
+                    "options": [
+                        "File",
+                        "Database",
+                        "APC",
+                        "Redis",
+                        "Memcached",
+                        "Array",
+                        "DynamoDB",
+                        "Doctrine"
+                    ],
+                    "answer": "Doctrine"
+                },
+                {
+                    "question": "How to clear cache in Laravel?",
+                    "options": [
+                        "php artisan cache: clear",
+                        "php artisan config: clear",
+                        "php artisan cache: clear",
+                        "All of them"
+                    ],
+                    "answer": "Doctrine"
                 }
             ]
         }
