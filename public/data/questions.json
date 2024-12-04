@@ -975,6 +975,25 @@
                         "The .env file is missing"
                     ],
                     "answer": "Eager loading is not being used for N+1 queries"
+                },
+                {
+                    "question": "Database queries are slow. Which should use to identify the problematic queries?",
+                    "options": [
+                        "Laravel Telescope",
+                        "Using the Query Event System",
+                        "Using DB::enableQueryLog() followed by DB::getQueryLog()"
+                    ],
+                    "answer": "Laravel Telescope"
+                },
+                {
+                    "question": "To ensure consistent code style. Which combination of tools would be most effective?",
+                    "options": [
+                        "Only PHPUnit for testing",
+                        "Laravel Pint and PHP_CodeSniffer with pre-commit hooks",
+                        "Manual code review only",
+                        "Just using an IDE's formatter"
+                    ],
+                    "answer": "Laravel Pint and PHP_CodeSniffer with pre-commit hooks"
                 }
             ]
         }

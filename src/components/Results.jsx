@@ -1,5 +1,6 @@
 "use client";
-
+import React, { useRef } from 'react';
+import { toPng } from 'html-to-image';
 import { useEffect, useState } from "react";
 import { FaTrophy, FaCheckCircle, FaTimesCircle, FaQuestionCircle, FaPercentage, FaClock, FaStopwatch } from "react-icons/fa";
 import Confetti from 'react-confetti';
@@ -26,21 +27,42 @@ const Results = ({
     }, 7000); 
     return () => clearTimeout(timer);
   }, []);
+  
+  const divRef = useRef();
 
+  const handleDownload = async () => {
+    if (!divRef.current) return;
+
+    try {
+      const dataUrl = await toPng(divRef.current);
+      const link = document.createElement('a');
+      link.href = dataUrl;
+      link.download = 'quiz-result.png';
+      link.click();
+    } catch (err) {
+      console.error('Failed to download the image:', err);
+    }
+  };
   return (
-    <div className="p-6 bg-gray-100 min-h-screen flex flex-col items-center">
+    <>
+    <div className="flex justify-center">
+    <button onClick={handleDownload} className="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+        Download as Image
+    </button>
+    </div>
+    <div ref={divRef} className="p-6 bg-gray-100 min-h-screen flex flex-col items-center">
       {showConfetti && <Confetti width={width} height={height} numberOfPieces={700} />}
 
-      <h2 className="text-3xl font-bold mb-6 text-center text-blue-600">
+      <h2 className="text-3xl font-bold mb-4 text-center text-blue-600">
         Quiz Results
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl mt-4">
         
         {/* Total Points */}
         <div className="p-5 bg-white shadow-md rounded-lg flex items-center justify-between hover:shadow-lg transition-shadow duration-300">
           <div>
             <p className="text-xl font-semibold">Total Points</p>
-            <p className="text-lg font-bold text-green-600">{score}</p>
+            <p className="text-lg font-bold text-green-600">{totalQuestions*4}</p>
           </div>
           <FaTrophy className="text-yellow-500 text-3xl" />
         </div>
@@ -116,6 +138,7 @@ const Results = ({
         </div>
       </div>
     </div>
+  </>
   );
 };
 

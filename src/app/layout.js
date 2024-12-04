@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Quiz App",
-  description: "Quiz App For Students",
+  title: "QK",
+  description: "Quiz App For All",
 };
 
 export default function RootLayout({ children }) {
