@@ -15,7 +15,7 @@ const Header = () => {
         href="/"
         className="text-3xl font-bold text-white hover:text-blue-400 transition-colors duration-300"
       >
-        Quiz App
+        QK
       </Link>
 
       {/* Points Display */}

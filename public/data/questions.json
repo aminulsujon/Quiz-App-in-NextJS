@@ -953,6 +953,30 @@
                     "answer": "Golf"
                 }
             ]
+        },
+        {
+            "name": "Laravel",
+            "image": "/images/quiz.png",
+            "questions": [
+                {
+                    "question": "Which approach consumes less memory when processing 100,000 records in Laravel?",
+                    "options": [
+                        "Using chunk() to process records in batches",
+                        "Using get() to process all records"
+                    ],
+                    "answer": "Using chunk() to process records in batches"
+                },
+                {
+                    "question": "A Laravel application suddenly starts throwing memory errors in production. Which of these is most likely the cause?",
+                    "options": [
+                        "Route caching is enabled",
+                        "The application key is not set",
+                        "Eager loading is not being used for N+1 queries",
+                        "The .env file is missing"
+                    ],
+                    "answer": "Eager loading is not being used for N+1 queries"
+                }
+            ]
         }
     ]
 }
