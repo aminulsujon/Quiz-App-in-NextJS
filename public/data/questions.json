@@ -107,6 +107,316 @@
             ]
         },
         {
+            "name": "Next Js",
+            "image": "/images/quiz.png",
+            "questions": [
+                {
+                  "question": "What is Next.js primarily used for?",
+                  "options": [
+                    "Backend development",
+                    "Static site generation",
+                    "Mobile app development",
+                    "Game development"
+                  ],
+                  "answer": "Static site generation"
+                },
+                {
+                  "question": "Which company maintains Next.js?",
+                  "options": [
+                    "Google",
+                    "Microsoft",
+                    "Vercel",
+                    "Facebook"
+                  ],
+                  "answer": "Vercel"
+                },
+                {
+                  "question": "What command initializes a new Next.js project?",
+                  "options": [
+                    "npx create-next-app",
+                    "npm init next",
+                    "next new app",
+                    "npx create-react-next"
+                  ],
+                  "answer": "npx create-next-app"
+                },
+                {
+                  "question": "What is the default directory for pages in Next.js?",
+                  "options": [
+                    "src/pages",
+                    "components",
+                    "pages",
+                    "app"
+                  ],
+                  "answer": "pages"
+                },
+                {
+                  "question": "How does Next.js handle routing?",
+                  "options": [
+                    "Manually via React Router",
+                    "File-based routing",
+                    "Route.js configuration",
+                    "Using route.json"
+                  ],
+                  "answer": "File-based routing"
+                },
+                {
+                  "question": "Which of the following is used for static generation in Next.js?",
+                  "options": [
+                    "getStaticProps",
+                    "getServerSideProps",
+                    "componentDidMount",
+                    "useEffect"
+                  ],
+                  "answer": "getStaticProps"
+                },
+                {
+                  "question": "Which function is used for server-side rendering in Next.js?",
+                  "options": [
+                    "getInitialProps",
+                    "getStaticProps",
+                    "getServerSideProps",
+                    "fetchData"
+                  ],
+                  "answer": "getServerSideProps"
+                },
+                {
+                  "question": "Where do you define API routes in a Next.js project?",
+                  "options": [
+                    "pages/api",
+                    "api/routes",
+                    "routes/api",
+                    "src/api"
+                  ],
+                  "answer": "pages/api"
+                },
+                {
+                  "question": "What extension do Next.js pages typically use?",
+                  "options": [
+                    ".jsx or .tsx",
+                    ".html",
+                    ".php",
+                    ".node"
+                  ],
+                  "answer": ".jsx or .tsx"
+                },
+                {
+                  "question": "Which hook is commonly used for client-side data fetching?",
+                  "options": [
+                    "useEffect",
+                    "getStaticProps",
+                    "getServerSideProps",
+                    "componentDidMount"
+                  ],
+                  "answer": "useEffect"
+                },
+                {
+                  "question": "Which Next.js feature enables image optimization?",
+                  "options": [
+                    "next/image",
+                    "next-opt",
+                    "image-loader",
+                    "next-img"
+                  ],
+                  "answer": "next/image"
+                },
+                {
+                  "question": "What file can be used to customize the HTML structure?",
+                  "options": [
+                    "_document.js",
+                    "_html.js",
+                    "index.html",
+                    "_head.js"
+                  ],
+                  "answer": "_document.js"
+                },
+                {
+                  "question": "Which file allows you to wrap all pages with common layout or providers?",
+                  "options": [
+                    "_app.js",
+                    "layout.js",
+                    "main.js",
+                    "_document.js"
+                  ],
+                  "answer": "_app.js"
+                },
+                {
+                  "question": "What does ISR stand for in Next.js?",
+                  "options": [
+                    "Incremental Static Regeneration",
+                    "Instant Server Refresh",
+                    "Internal Static Rendering",
+                    "Image Style Rendering"
+                  ],
+                  "answer": "Incremental Static Regeneration"
+                },
+                {
+                  "question": "What does the Next.js `Link` component help with?",
+                  "options": [
+                    "Client-side navigation",
+                    "Image rendering",
+                    "Form handling",
+                    "Styling components"
+                  ],
+                  "answer": "Client-side navigation"
+                },
+                {
+                  "question": "What protocol does Next.js use for serverless functions?",
+                  "options": [
+                    "HTTP",
+                    "HTTPS",
+                    "Lambda",
+                    "API routes"
+                  ],
+                  "answer": "API routes"
+                },
+                {
+                  "question": "What is the purpose of `next.config.js`?",
+                  "options": [
+                    "Configuration of Next.js application",
+                    "Defining routes",
+                    "Adding CSS styles",
+                    "Declaring components"
+                  ],
+                  "answer": "Configuration of Next.js application"
+                },
+                {
+                  "question": "Which directive can be used in `next.config.js` to enable React Strict Mode?",
+                  "options": [
+                    "reactStrictMode: true",
+                    "strict: true",
+                    "enableStrict: true",
+                    "useStrictMode: true"
+                  ],
+                  "answer": "reactStrictMode: true"
+                },
+                {
+                  "question": "Which middleware file allows edge functions?",
+                  "options": [
+                    "middleware.js",
+                    "_middleware.js",
+                    "edge.js",
+                    "next.middleware.js"
+                  ],
+                  "answer": "middleware.js"
+                },
+                {
+                  "question": "What is the default port when running `npm run dev`?",
+                  "options": [
+                    "3000",
+                    "8080",
+                    "5000",
+                    "8000"
+                  ],
+                  "answer": "3000"
+                },
+              
+                // Add 30 more below...
+              
+                {
+                  "question": "Which file is used to set global CSS in Next.js?",
+                  "options": [
+                    "styles/globals.css",
+                    "global.css",
+                    "main.css",
+                    "_app.css"
+                  ],
+                  "answer": "styles/globals.css"
+                },
+                {
+                  "question": "What lifecycle does `getInitialProps` run in?",
+                  "options": [
+                    "Server and client",
+                    "Client only",
+                    "Server only",
+                    "At build time"
+                  ],
+                  "answer": "Server and client"
+                },
+                {
+                  "question": "What Next.js method supports dynamic routing?",
+                  "options": [
+                    "[param].js",
+                    "routes.js",
+                    ":param.js",
+                    "dynamic.js"
+                  ],
+                  "answer": "[param].js"
+                },
+                {
+                  "question": "Which package is required for TypeScript support?",
+                  "options": [
+                    "typescript",
+                    "ts-loader",
+                    "next-ts",
+                    "ts-support"
+                  ],
+                  "answer": "typescript"
+                },
+                {
+                  "question": "How can you handle 404 pages in Next.js?",
+                  "options": [
+                    "Create 404.js in pages",
+                    "Modify index.js",
+                    "Use error.js",
+                    "Declare in next.config.js"
+                  ],
+                  "answer": "Create 404.js in pages"
+                },
+                {
+                  "question": "What is `next export` used for?",
+                  "options": [
+                    "Export static HTML",
+                    "Export database schema",
+                    "Export environment variables",
+                    "Export components"
+                  ],
+                  "answer": "Export static HTML"
+                },
+                {
+                  "question": "What is `fallback: true` used for in dynamic routes?",
+                  "options": [
+                    "Enable ISR for non-generated paths",
+                    "Show 404",
+                    "Disable fallback",
+                    "Force static build"
+                  ],
+                  "answer": "Enable ISR for non-generated paths"
+                },
+                {
+                  "question": "Which package does Next.js use for routing internally?",
+                  "options": [
+                    "next/router",
+                    "react-router-dom",
+                    "route-dom",
+                    "page-router"
+                  ],
+                  "answer": "next/router"
+                },
+                {
+                  "question": "Which folder contains static assets like images?",
+                  "options": [
+                    "public",
+                    "assets",
+                    "static",
+                    "media"
+                  ],
+                  "answer": "public"
+                },
+                {
+                  "question": "Can Next.js be used for full-stack apps?",
+                  "options": [
+                    "Yes, with API routes",
+                    "No, frontend only",
+                    "Only with Express.js",
+                    "Only for static sites"
+                  ],
+                  "answer": "Yes, with API routes"
+                }
+              ]
+              
+        },
+        {
             "name": "Math",
             "image": "/images/quiz.png",
             "questions": [
