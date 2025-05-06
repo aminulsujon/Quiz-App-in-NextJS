@@ -311,8 +311,6 @@
                   "answer": "3000"
                 },
               
-                // Add 30 more below...
-              
                 {
                   "question": "Which file is used to set global CSS in Next.js?",
                   "options": [
